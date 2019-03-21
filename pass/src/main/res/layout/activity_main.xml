@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/generatedPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/enterWebsiteNameinfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="50dp"
+        android:text="Enter Website Name :"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/websiteNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/generatePassButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
+        android:text="Hit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/masterPasswordEditText" />
+
+    <TextView
+        android:id="@+id/masterPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="100dp"
+        android:text="Enter Master Password :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/masterPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/lengthSeekbar"
+        android:layout_width="400dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:max="20"
+        android:padding="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:progress="12"
+        app:layout_constraintBottom_toTopOf="@+id/generatePassButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/specialCharacterCheckBox"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="170dp"
+        android:text="Have a special character"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/numericCheckBox"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="230dp"
+        android:text="Have a numeric character"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/mixCaseCheckBox"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="290dp"
+        android:text="Mix upper and lower case"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/showPasswordSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="140dp"
+        android:text="show Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lengthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="360dp"
+        android:text="Choose length (1-20)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lengthChosenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="360dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
